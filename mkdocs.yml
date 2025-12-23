@@ -1,9 +1,20 @@
 site_name: Antonin Poché
+site_url: https://antoninpoche.github.io/
+
 nav:
-  - Home: home.md
-  - Research: research.md
-  - Publications: publications.md
-  - Code: code.md
-  - Talks: talks.md
-  - Teaching: teaching.md
-  - Resume: resume.pdf
+  - Intro: index.md
+  - Research: /#research
+  - News: /#news
+  - Publications: /#publications
+  - Software: /#software
+  - Talks: /#talks
+  - Teaching: /#teaching
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+extra_css:
+  - stylesheets/extra.css
