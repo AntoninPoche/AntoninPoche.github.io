@@ -1,3 +1,9 @@
 site_name: Antonin Poché
 nav:
-  - Home: index.md
+  - Home: home.md
+  - Research: research.md
+  - Publications: publications.md
+  - Code: code.md
+  - Talks: talks.md
+  - Teaching: teaching.md
+  - Resume: resume.pdf
