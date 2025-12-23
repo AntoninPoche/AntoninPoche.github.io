@@ -1,0 +1,69 @@
+/* Make the custom left panel stay visible while scrolling (desktop) */
+.profile {
+    position: sticky;
+    top: 4rem;
+    /* adjust if it overlaps the top header */
+    padding: 1rem;
+}
+
+.profile__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 999px;
+    display: block;
+    margin: 0 auto 0.75rem auto;
+    object-fit: cover;
+}
+
+.profile__name {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.profile__lines {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem 0;
+}
+
+.profile__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.profile__link {
+    text-decoration: none;
+}
+
+/* --- Left sidebar sizing + flush alignment --- */
+
+/* Make the primary sidebar ~20% of the viewport (with sensible min/max) */
+@media (min-width: 60em) {
+    .md-sidebar--primary {
+        width: 20vw;
+        max-width: 360px;
+        min-width: 100px;
+    }
+
+    /* Ensure the layout accounts for the new sidebar width */
+    .md-main__inner {
+        margin-left: 0;
+    }
+}
+
+/* Remove extra padding so the panel is visually flush */
+.md-sidebar--primary .md-sidebar__inner {
+    padding: 0;
+}
+
+/* Keep your profile block sticky and add internal padding */
+.profile {
+    position: sticky;
+    top: 4rem;
+    /* adjust if needed */
+    padding: 1rem;
+    /* internal padding inside the gray panel */
+}

@@ -1,0 +1,22 @@
+<nav class="md-nav md-nav--primary" aria-label="Profile">
+    <div class="profile">
+        <img class="profile__avatar" src="{{ config.extra.profile.avatar | url }}" alt="Photo" />
+        <div class="profile__name">{{ config.site_name }}</div>
+
+        <div class="profile__contacts">
+            {% for item in config.extra.profile.contacts %}
+            <div class="profile__contact">
+                <img class="profile__icon" src="{{ item.icon | url }}" alt="" aria-hidden="true" />
+
+                {% if item.url %}
+                <a class="profile__text" href="{{ item.url }}" target="_blank" rel="noopener">
+                    {{ item.text }}
+                </a>
+                {% else %}
+                <span class="profile__text">{{ item.text }}</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</nav>

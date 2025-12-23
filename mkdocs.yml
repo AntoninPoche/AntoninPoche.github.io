@@ -4,7 +4,6 @@ site_url: https://antoninpoche.github.io/
 nav:
   - Intro: index.md
   - Research: /#research
-  - News: /#news
   - Publications: /#publications
   - Software: /#software
   - Talks: /#talks
@@ -12,9 +11,28 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+
+extra:
+  profile:
+    avatar: assets/profile.jpg
+    contacts:
+      - icon: assets/icons/mail.svg
+        text: antonin.poche at irt-saintexupery.com
+      - icon: assets/icons/discord.svg
+        text: antorses
+      - icon: assets/icons/x.svg
+        text: Antonin_Poche
+        url: https://x.com/Antonin_Poche
+      - icon: assets/icons/bluesky.svg
+        text: antoninpoche.bsky.social
+        url: https://bsky.app/profile/antoninpoche.bsky.social
+      - icon: assets/icons/linkedin.svg
+        text: Antonin Poché
+        url: https://www.linkedin.com/in/antonin-poche/
 
 extra_css:
   - stylesheets/extra.css
