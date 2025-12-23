@@ -11,8 +11,8 @@ python -m venv .venv
 # activate env
 .\.venv\Scripts\activate
 
-# install mkdocs
-pip install mkdocs
+# install requirements
+pip install -r requirements.txt
 
 # build the doc locally
 mkdocs serve
