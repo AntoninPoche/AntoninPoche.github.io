@@ -1,0 +1,12 @@
+- id: intro
+  title: "Intro"
+- id: research
+  title: "Research"
+- id: software
+  title: "Software"
+- id: publications
+  title: "Publications"
+- id: talks
+  title: "Talks"
+- id: teaching
+  title: "Teaching"

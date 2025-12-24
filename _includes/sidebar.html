@@ -1,0 +1,18 @@
+<aside class="sidebar">
+  <div class="sidebar-inner">
+    <img class="avatar" src="{{ site.data.profile.photo | relative_url }}" alt="Profile photo" />
+
+    <div class="sidebar-text">
+      <div class="name">{{ site.data.profile.name }}</div>
+      <div class="title">{{ site.data.profile.title }}</div>
+    </div>
+
+    <div class="icons">
+      {% for c in site.data.profile.contacts %}
+        <a class="icon" href="{{ c.href }}" aria-label="{{ c.label }}" title="{{ c.label }}">
+          {{ c.label }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</aside>

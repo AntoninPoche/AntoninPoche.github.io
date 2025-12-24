@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+
+{% include sidebar.html %}
+
+<main class="main">
+  {% include topnav.html %}
+
+  <div class="content">
+    {% for s in site.data.sections %}
+      {% include section.html id=s.id title=s.title %}
+    {% endfor %}
+  </div>
+</main>

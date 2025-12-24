@@ -1,0 +1,15 @@
+name: "Antonin Poché"
+title: "PhD Student"
+
+photo: "/assets/img/profile.jpg"
+
+# Placeholder “icons”: labels for now; replace with SVG later
+contacts:
+  - label: "Email"
+    href: "mailto:antonin.poche@irt-saintexupery.com"
+  - label: "GitHub"
+    href: "https://github.com/AntoninPoche"
+  - label: "Scholar"
+    href: "#"
+  - label: "X"
+    href: "#"

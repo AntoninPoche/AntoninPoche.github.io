@@ -1,0 +1,14 @@
+title: "Antonin Poché"
+description: "Personal research website"
+url: "https://antoninpoche.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+# Keep build simple for GitHub Pages
+plugins: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
