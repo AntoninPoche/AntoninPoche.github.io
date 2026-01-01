@@ -1,7 +1,9 @@
 <nav class="topnav" aria-label="Sections">
   <div class="tabs">
     {% for s in site.data.sections %}
-      <a class="tab" href="#{{ s.id }}" data-target="{{ s.id }}">{{ s.title }}</a>
+    <a class="tab" href="#{{ s.id }}" data-target="{{ s.id }}">
+      <strong>{{ s.title }}</strong>
+    </a>
     {% endfor %}
   </div>
 </nav>

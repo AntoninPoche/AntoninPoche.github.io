@@ -1,19 +1,28 @@
+photo: "/assets/img/profile.png"
 name: "Antonin Poché"
-title: "PhD Student"
+title: "PhD Student in XAI for NLP"
+location: |
+  IRT Saint Exupéry & IRIT
+  Toulouse, France
+email: "antonin.poche at irt-saintexupery.com"
 
-photo: "/assets/img/profile.jpg"
-
-# Placeholder “icons”: labels for now; replace with SVG later
 contacts:
-  - label: "Email"
-    href: "mailto:antonin.poche@irt-saintexupery.com"
   - label: "GitHub"
     href: "https://github.com/AntoninPoche"
+    icon: "/assets/img/icons/github.png"
+
   - label: "Scholar"
     href: "https://scholar.google.com/citations?user=ddISl7cAAAAJ"
+    icon: "/assets/img/icons/scholar.png"
+
   - label: "X"
     href: "https://x.com/Antonin_Poche"
+    icon: "/assets/img/icons/x.png"
+
   - label: "Bluesky"
     href: "https://bsky.app/profile/antoninpoche.bsky.social"
+    icon: "/assets/img/icons/bluesky.png"
+
   - label: "LinkedIn"
     href: "https://www.linkedin.com/in/antonin-poche/"
+    icon: "/assets/img/icons/linkedin.png"

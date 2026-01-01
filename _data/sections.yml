@@ -4,6 +4,8 @@
   title: "Research"
 - id: software
   title: "Software"
+- id: news
+  title: "News"
 - id: publications
   title: "Publications"
 - id: talks
