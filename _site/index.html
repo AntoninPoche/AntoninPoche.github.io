@@ -10,63 +10,85 @@
     <div class="layout">
       <aside class="sidebar">
   <div class="sidebar-inner">
-    <img class="avatar" src="/assets/img/profile.jpg" alt="Profile photo" />
+    <img class="avatar" src="/assets/img/profile.png" alt="Profile photo" />
 
-    <div class="sidebar-text">
-      <div class="name">Antonin Poché</div>
-      <div class="title">PhD Student</div>
-    </div>
+    <div class="sidebar-name">Antonin Poché</div>
+    <div class="sidebar-title">PhD Student in XAI for NLP</div>
+    <div class="sidebar-location">IRT Saint Exupéry & IRIT<br />
+Toulouse, France<br />
+</div>
+    <div class="sidebar-email">antonin.poche at irt-saintexupery.com</div>
 
     <div class="icons">
       
-        <a class="icon" href="mailto:antonin.poche@irt-saintexupery.com" aria-label="Email" title="Email">
-          Email
-        </a>
+      <a class="icon" href="https://github.com/AntoninPoche" aria-label="GitHub" title="GitHub">
+        
+        <img class="icon-img" src="/assets/img/icons/github.png" alt="GitHub">
+        
+      </a>
       
-        <a class="icon" href="https://github.com/AntoninPoche" aria-label="GitHub" title="GitHub">
-          GitHub
-        </a>
+      <a class="icon" href="https://scholar.google.com/citations?user=ddISl7cAAAAJ" aria-label="Scholar" title="Scholar">
+        
+        <img class="icon-img" src="/assets/img/icons/scholar.png" alt="Scholar">
+        
+      </a>
       
-        <a class="icon" href="https://scholar.google.com/citations?user=ddISl7cAAAAJ" aria-label="Scholar" title="Scholar">
-          Scholar
-        </a>
+      <a class="icon" href="https://x.com/Antonin_Poche" aria-label="X" title="X">
+        
+        <img class="icon-img" src="/assets/img/icons/x.png" alt="X">
+        
+      </a>
       
-        <a class="icon" href="https://x.com/Antonin_Poche" aria-label="X" title="X">
-          X
-        </a>
+      <a class="icon" href="https://bsky.app/profile/antoninpoche.bsky.social" aria-label="Bluesky" title="Bluesky">
+        
+        <img class="icon-img" src="/assets/img/icons/bluesky.png" alt="Bluesky">
+        
+      </a>
       
-        <a class="icon" href="https://bsky.app/profile/antoninpoche.bsky.social" aria-label="Bluesky" title="Bluesky">
-          Bluesky
-        </a>
-      
-        <a class="icon" href="https://www.linkedin.com/in/antonin-poche/" aria-label="LinkedIn" title="LinkedIn">
-          LinkedIn
-        </a>
+      <a class="icon" href="https://www.linkedin.com/in/antonin-poche/" aria-label="LinkedIn" title="LinkedIn">
+        
+        <img class="icon-img" src="/assets/img/icons/linkedin.png" alt="LinkedIn">
+        
+      </a>
       
     </div>
   </div>
 </aside>
 
-
 <main class="main">
   <nav class="topnav" aria-label="Sections">
   <div class="tabs">
     
-      <a class="tab" href="#intro" data-target="intro">Intro</a>
+    <a class="tab" href="#intro">
+      <strong>Intro</strong>
+    </a>
     
-      <a class="tab" href="#research" data-target="research">Research</a>
+    <a class="tab" href="#research">
+      <strong>Research</strong>
+    </a>
     
-      <a class="tab" href="#software" data-target="software">Software</a>
+    <a class="tab" href="#software">
+      <strong>Software</strong>
+    </a>
     
-      <a class="tab" href="#publications" data-target="publications">Publications</a>
+    <a class="tab" href="#news">
+      <strong>News</strong>
+    </a>
     
-      <a class="tab" href="#talks" data-target="talks">Talks</a>
+    <a class="tab" href="#publications">
+      <strong>Publications</strong>
+    </a>
     
-      <a class="tab" href="#teaching" data-target="teaching">Teaching</a>
+    <a class="tab" href="#talks">
+      <strong>Talks</strong>
+    </a>
+    
+    <a class="tab" href="#teaching">
+      <strong>Teaching</strong>
+    </a>
     
   </div>
 </nav>
-
 
   <div class="content">
     
@@ -75,9 +97,14 @@
 
   <div class="section-body">
     <div class="card">
-  <p>I am a second-year PhD student in interpretability for language. Core
-    maintainer of the Interpreto open-source library. My goal is to provide
-    easy access to useful explanations.</p>
+  <p>Hello, welcome to my website. I am a second-year PhD student in <b>Interpretability</b> for <b>Natural Language
+      Processing</b> models.
+    I do my PhD between the IRT Saint Exupéry and the IRIT, both in Toulouse France.
+    I am under the supervision of Pr. Nicholas Asher, Pr. Philippe Muller, and Dr. Fanny Jourdan.</p>
+  <p>Core maintainer of the <a class="link" href="https://github.com/FOR-sight-ai/interpreto">Interpreto</a> and
+    <a class="link" href="https://github.com/deel-ai/xplique">Xplique</a> open-source libraries.
+    My goal is to provide easy access to useful explanations.
+  </p>
   <p>I am currently developing this website. Please, wait a few days :)</p>
 </div>
   </div>
@@ -89,10 +116,23 @@
 
   <div class="section-body">
     <div class="card">
-  <p>Placeholder research text.</p>
-  <p><a href="#">Placeholder link</a></p>
+  <p>The goal of my PhD is to build an interpretability agent (conversational explainability) for language models.
+    However, I find that the quality and consistency of explanations are lacking, in particular with concept-based
+    explanations.
+  </p>
+  <p>Which is why I currently work on improving such explanations.
+    Notably, the first publication of my PhD,
+    <a class="link" href="https://arxiv.org/abs/2501.05855">ConSim (Poché et al. ACL 2025)</a>,
+    aims at evaluating the usefulness of concept-based explanations in NLP.
+  </p>
+  <p>The future directions I would like to explore are:</p>
+  <ul>
+    <li>Improving the interpretation of concept-based explanations.</li>
+    <li>Building contrastive concept-based explanations.</li>
+    <li>Example-based explanations for language models.</li>
+  </ul>
+  <p>If these subjects are of interest to you, feel free to contact me, I would be happy to collaborate.</p>
 </div>
-
   </div>
 </section>
 
@@ -102,9 +142,18 @@
 
   <div class="section-body">
     <div class="card">
-  <p>Placeholder software text.</p>
+  <p><a class="link" href="https://github.com/FOR-sight-ai/interpreto">Interpreto</a></p>
+  <p><a class="link" href="https://github.com/deel-ai/xplique">Xplique</a></p>
 </div>
+  </div>
+</section>
 
+    
+      <section id="news" class="section" data-section="news">
+  <h2>News</h2>
+
+  <div class="section-body">
+    
   </div>
 </section>
 
