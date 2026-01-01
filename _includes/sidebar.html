@@ -2,12 +2,10 @@
   <div class="sidebar-inner">
     <img class="avatar" src="{{ site.data.sidebar.photo | relative_url }}" alt="Profile photo" />
 
-    <div class="sidebar-text">
-      <div class="name" style="font-size: 30px;">{{ site.data.sidebar.name }}</div>
-      <div class="title" style="font-size: 18px;">{{ site.data.sidebar.title }}</div>
-      <div class="location" style="font-size: 14px;">{{ site.data.sidebar.location | newline_to_br }}</div>
-      <div class="email" style="font-size: 12px;">{{ site.data.sidebar.email }}</div>
-    </div>
+    <div class="sidebar-name">{{ site.data.sidebar.name }}</div>
+    <div class="sidebar-title">{{ site.data.sidebar.title }}</div>
+    <div class="sidebar-location">{{ site.data.sidebar.location | newline_to_br }}</div>
+    <div class="sidebar-email">{{ site.data.sidebar.email }}</div>
 
     <div class="icons">
       {% for c in site.data.sidebar.contacts %}
