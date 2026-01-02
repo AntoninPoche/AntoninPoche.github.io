@@ -12,10 +12,14 @@ links:
     href: "https://github.com/deel-ai/xplique"
     icon: "/assets/icons/github.png"
     new_tab: true
-  - label: "Paper"
-    href: "https://arxiv.org/abs/2206.04394"
-    icon: "/assets/icons/arxiv.png"
-    new_tab: true
   - label: "Docs"
     href: "https://deel-ai.github.io/xplique/latest/"
     icon: "/assets/icons/docs.png"
+    new_tab: true
+  - label: "Cite"
+    href: "https://scholar.googleusercontent.com/scholar.bib?q=info:KZZvbCkMjdoJ:scholar.google.com/&output=citation&scisdr=CrwyyRHOEPPLyZGu9Eo:ALhkC2QAAAAAaVeo7EqF5NjQWsohQu9lNeFHZog&scisig=ALhkC2QAAAAAaVeo7PDGCoZiA_7t_thSqeWlrG4&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1"
+    icon: "/assets/icons/scholar.png"
+    new_tab: true
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2206.04394"
+    icon: "/assets/icons/arxiv.png"

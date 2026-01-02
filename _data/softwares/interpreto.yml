@@ -12,10 +12,14 @@ links:
     href: "https://github.com/FOR-sight-ai/interpreto"
     icon: "/assets/icons/github.png"
     new_tab: true
-  - label: "Paper"
-    href: "https://arxiv.org/abs/2512.09730"
-    icon: "/assets/icons/arxiv.png"
-    new_tab: true
   - label: "Docs"
     href: "https://for-sight-ai.github.io/interpreto/"
     icon: "/assets/icons/docs.png"
+    new_tab: true
+  - label: "Cite"
+    href: "https://scholar.googleusercontent.com/scholar.bib?q=info:C88EGxAdaa8J:scholar.google.com/&output=citation&scisdr=CrwyyRHOEPPLyZGuln0:ALhkC2QAAAAAaVeojn3cJbohDH_e06QOPhBke5M&scisig=ALhkC2QAAAAAaVeojmGrd5cZTWygYSxp2Wv9tHA&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1"
+    icon: "/assets/icons/scholar.png"
+    new_tab: true
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2512.09730"
+    icon: "/assets/icons/arxiv.png"

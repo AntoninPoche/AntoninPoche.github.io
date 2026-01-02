@@ -44,7 +44,7 @@ body {
   position: sticky;
   top: 0;
   height: 100vh;
-  border-right: 1px solid var(--border);
+  /* border-right: 1px solid var(--border); */
   padding: 24px;
   background: var(--sidebar-bg);
 }
@@ -85,7 +85,6 @@ body {
   height: 160px;
   border-radius: 12px;
   object-fit: cover;
-  border: 1px solid var(--border);
 }
 
 .sidebar-icons {
@@ -271,7 +270,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
   background: var(--topnav-bg);
   color: var(--topnav-text);
 }
@@ -333,6 +332,6 @@ body {
     position: relative;
     height: auto;
     border-right: none;
-    border-bottom: 1px solid var(--border);
+    /* border-bottom: 1px solid var(--border); */
   }
 }
