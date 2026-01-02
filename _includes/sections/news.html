@@ -1,0 +1,21 @@
+<div class="news">
+    <ul class="news-list">
+        {% for n in site.data.news.index limit:10 %}
+        <li class="news-item">
+            <span class="news-date">{{ n.date }}</span>
+            <a class="news-link" href="{{ n.href }}">{{ n.title }}</a>
+        </li>
+        {% endfor %}
+
+        {% for n in site.data.news.index offset:10 %}
+        <li class="news-item news-item-hidden">
+            <span class="news-date">{{ n.date }}</span>
+            <a class="news-link" href="{{ n.href }}">{{ n.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% if site.data.news.index.size > 10 %}
+    <button class="news-toggle" type="button" aria-expanded="false">More</button>
+    {% endif %}
+</div>

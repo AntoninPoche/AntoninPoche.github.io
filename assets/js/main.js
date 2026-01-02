@@ -1,42 +1,56 @@
+// main.js
+// - Top nav: smooth scroll + "active tab" highlight while scrolling
+// - Contribution cards: clamp description + More/Less toggle
+// - News section: show last 10 + More/Less toggle
 (function () {
+  // -----------------------------
+  // Topnav: smooth scroll + spy
+  // -----------------------------
   const tabs = Array.from(document.querySelectorAll(".tab"));
   const sections = Array.from(document.querySelectorAll(".section"));
 
-  function setActive(id) {
+  function setActiveTab(id) {
     tabs.forEach((t) => t.classList.toggle("is-active", t.dataset.target === id));
   }
 
-  // Click: smooth scroll (works even without CSS smooth scroll)
-  tabs.forEach((t) => {
-    t.addEventListener("click", (e) => {
-      const id = t.dataset.target;
-      const el = document.getElementById(id);
-      if (!el) return;
+  function initTopNav() {
+    // Click: smooth scroll to section
+    tabs.forEach((t) => {
+      t.addEventListener("click", (e) => {
+        const id = t.dataset.target;
+        const el = document.getElementById(id);
+        if (!el) return;
 
-      e.preventDefault();
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-      history.replaceState(null, "", `#${id}`);
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.replaceState(null, "", `#${id}`);
+      });
     });
-  });
 
-  // Scroll spy: highlight current section tab
-  const obs = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((x) => x.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    // Scroll spy: highlight the most visible section
+    if (sections.length > 0 && tabs.length > 0) {
+      const obs = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((x) => x.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-      if (visible) setActive(visible.target.id);
-    },
-    { root: null, threshold: [0.25, 0.4, 0.6] }
-  );
+          if (visible) setActiveTab(visible.target.id);
+        },
+        { root: null, threshold: [0.25, 0.4, 0.6] }
+      );
 
-  sections.forEach((s) => obs.observe(s));
+      sections.forEach((s) => obs.observe(s));
+    }
 
-  // Initialize from hash (if any)
-  const hash = (location.hash || "").replace("#", "");
-  if (hash) setActive(hash);
+    // Initialize from hash (if any)
+    const hash = (location.hash || "").replace("#", "");
+    if (hash) setActiveTab(hash);
+  }
 
+  // -----------------------------------------
+  // Contributions: "More/Less" description
+  // -----------------------------------------
   function initContributionToggles() {
     const blocks = document.querySelectorAll(".contribution-description");
 
@@ -44,10 +58,9 @@
       const text = block.querySelector(".contribution-description-text");
       const btn = block.querySelector(".contribution-toggle");
       const card = block.closest(".contribution");
-
       if (!text || !btn || !card) return;
 
-      // Determine if clamped content overflows (button only if needed)
+      // Show the button only if clamped content overflows
       const needsToggle = text.scrollHeight > text.clientHeight + 1;
       btn.style.display = needsToggle ? "inline" : "none";
 
@@ -59,9 +72,35 @@
     });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initContributionToggles);
-  } else {
+  // -----------------------------
+  // News: More/Less list toggle
+  // -----------------------------
+  function initNewsToggle() {
+    const news = document.querySelector(".news");
+    if (!news) return;
+
+    const btn = news.querySelector(".news-toggle");
+    if (!btn) return;
+
+    btn.addEventListener("click", () => {
+      const expanded = news.classList.toggle("is-expanded");
+      btn.setAttribute("aria-expanded", expanded ? "true" : "false");
+      btn.textContent = expanded ? "Less" : "More";
+    });
+  }
+
+  // -----------------------------
+  // Init everything once DOM ready
+  // -----------------------------
+  function initAll() {
+    initTopNav();
     initContributionToggles();
+    initNewsToggle();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAll);
+  } else {
+    initAll();
   }
 })();
