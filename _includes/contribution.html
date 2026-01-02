@@ -1,0 +1,48 @@
+<div class="contribution">
+    <div class="contribution-main">
+        <h3 class="contribution-title">{{ include.item.title }}</h3>
+
+        {% if include.item.authors %}
+        <p class="contribution-authors">{{ include.item.authors }}</p>
+        {% endif %}
+
+        {% if include.item.date or include.item.venue %}
+        <p class="contribution-meta">
+            {% if include.item.date %}{{ include.item.date }}{% endif %}
+            {% if include.item.date and include.item.venue %} · {% endif %}
+            {% if include.item.venue %}{{ include.item.venue }}{% endif %}
+        </p>
+        {% endif %}
+
+        {% if include.item.description %}
+        <div class="contribution-description">
+            <p class="contribution-description-text">{{ include.item.description }}</p>
+            <button class="contribution-toggle" type="button" aria-expanded="false">
+                More
+            </button>
+        </div>
+        {% endif %}
+
+
+        {% if include.item.links %}
+        <div class="contribution-links">
+            {% for l in include.item.links %}
+            <a class="contribution-link" href="{{ l.href }}" {% if l.new_tab %}target="_blank" rel="noopener" {% endif
+                %}>
+                {% if l.icon %}
+                <img class="contribution-link-logo" src="{{ l.icon | relative_url }}" alt="{{ l.label }}">
+                {% endif %}
+                <span>{{ l.label }}</span>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    {% if include.item.illustration %}
+    <div class="contribution-figure">
+        <img class="contribution-illustration" src="{{ include.item.illustration | relative_url }}"
+            alt="Illustration for {{ include.item.title }}">
+    </div>
+    {% endif %}
+</div>

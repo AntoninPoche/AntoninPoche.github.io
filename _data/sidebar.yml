@@ -9,20 +9,20 @@ email: "antonin.poche at irt-saintexupery.com"
 contacts:
   - label: "GitHub"
     href: "https://github.com/AntoninPoche"
-    icon: "/assets/img/icons/github.png"
+    icon: "/assets/icons/github.png"
 
   - label: "Scholar"
     href: "https://scholar.google.com/citations?user=ddISl7cAAAAJ"
-    icon: "/assets/img/icons/scholar.png"
+    icon: "/assets/icons/scholar.png"
 
   - label: "X"
     href: "https://x.com/Antonin_Poche"
-    icon: "/assets/img/icons/x.png"
+    icon: "/assets/icons/x.png"
 
   - label: "Bluesky"
     href: "https://bsky.app/profile/antoninpoche.bsky.social"
-    icon: "/assets/img/icons/bluesky.png"
+    icon: "/assets/icons/bluesky.png"
 
   - label: "LinkedIn"
     href: "https://www.linkedin.com/in/antonin-poche/"
-    icon: "/assets/img/icons/linkedin.png"
+    icon: "/assets/icons/linkedin.png"

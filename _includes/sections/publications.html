@@ -1,4 +1,6 @@
-<div class="card">
-  <p>Placeholder publications section.</p>
-  <p>Later: loop over <code>site.data.publications</code>.</p>
+<div class="contribution-list">
+  {% for id in site.data.publications.index %}
+  {% assign item = site.data.publications[id] %}
+  {% include contribution.html item=item %}
+  {% endfor %}
 </div>

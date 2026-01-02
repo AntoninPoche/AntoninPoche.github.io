@@ -1,17 +1,17 @@
 <aside class="sidebar">
   <div class="sidebar-inner">
-    <img class="avatar" src="{{ site.data.sidebar.photo | relative_url }}" alt="Profile photo" />
+    <img class="sidebar-avatar" src="{{ site.data.sidebar.photo | relative_url }}" alt="Profile photo" />
 
     <div class="sidebar-name">{{ site.data.sidebar.name }}</div>
     <div class="sidebar-title">{{ site.data.sidebar.title }}</div>
     <div class="sidebar-location">{{ site.data.sidebar.location | newline_to_br }}</div>
     <div class="sidebar-email">{{ site.data.sidebar.email }}</div>
 
-    <div class="icons">
+    <div class="sidebar-icons">
       {% for c in site.data.sidebar.contacts %}
-      <a class="icon" href="{{ c.href }}" aria-label="{{ c.label }}" title="{{ c.label }}">
+      <a class="sidebar-icon" href="{{ c.href }}" aria-label="{{ c.label }}" title="{{ c.label }}">
         {% if c.icon %}
-        <img class="icon-img" src="{{ c.icon | relative_url }}" alt="{{ c.label }}">
+        <img class="sidebar-icon-img" src="{{ c.icon | relative_url }}" alt="{{ c.label }}">
         {% else %}
         {{ c.label }}
         {% endif %}

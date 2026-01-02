@@ -5,7 +5,7 @@ title: Sample Talk
 
 <h1>Sample Talk</h1>
 
-<div class="card">
+<div class="sections-paragraphs">
   <p>PDF embedded below (placeholder).</p>
   <object data="{{ '/assets/pdfs/sample-talk.pdf' | relative_url }}" type="application/pdf" width="100%" height="720">
     <p>

@@ -36,4 +36,32 @@
   // Initialize from hash (if any)
   const hash = (location.hash || "").replace("#", "");
   if (hash) setActive(hash);
+
+  function initContributionToggles() {
+    const blocks = document.querySelectorAll(".contribution-description");
+
+    blocks.forEach((block) => {
+      const text = block.querySelector(".contribution-description-text");
+      const btn = block.querySelector(".contribution-toggle");
+      const card = block.closest(".contribution");
+
+      if (!text || !btn || !card) return;
+
+      // Determine if clamped content overflows (button only if needed)
+      const needsToggle = text.scrollHeight > text.clientHeight + 1;
+      btn.style.display = needsToggle ? "inline" : "none";
+
+      btn.addEventListener("click", () => {
+        const expanded = card.classList.toggle("is-expanded");
+        btn.setAttribute("aria-expanded", expanded ? "true" : "false");
+        btn.textContent = expanded ? "Less" : "More";
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initContributionToggles);
+  } else {
+    initContributionToggles();
+  }
 })();

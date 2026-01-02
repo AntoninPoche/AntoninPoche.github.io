@@ -1,0 +1,21 @@
+title: "Xplique: Explainability Toolbox for Neural Networks"
+authors: "Thomas Fel, Lucas Hervier, <strong>Antonin Poche</strong>, David Vigouroux, Justin Plakoo, Remi Cadene, Mathieu Chalvidal, Julien Colin, Thibaut Boissin, Louis Bethune, Agustin Picard, Claire Nicodeme, Laurent Gardes, Gregory Flandin, Thomas Serre"
+date: "2022"
+venue: "Workshop on Explainable Artificial Intelligence for Computer Vision (CVPR)"
+description: |
+  Xplique (pronounced \ɛks.plik\) is a Python toolkit dedicated to explainability. The goal of this library is to gather the state of the art of Explainable AI to help you understand your complex neural network models. Originally built for Tensorflow's model it also works for PyTorch models partially.
+  The library is composed of several modules, the Attributions Methods module implements various methods (e.g Saliency, Grad-CAM, Integrated-Gradients...), with explanations, examples and links to official papers. The Feature Visualization module allows to see how neural networks build their understanding of images by finding inputs that maximize neurons, channels, layers or compositions of these elements. The Concepts module allows you to extract human concepts from a model and to test their usefulness with respect to a class. Finally, the Metrics module covers the current metrics used in explainability. Used in conjunction with the Attribution Methods module, it allows you to test the different methods or evaluate the explanations of a model.
+illustration: "/assets/img/xplique.png"
+
+links:
+  - label: "GitHub"
+    href: "https://github.com/deel-ai/xplique"
+    icon: "/assets/icons/github.png"
+    new_tab: true
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2206.04394"
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Docs"
+    href: "https://deel-ai.github.io/xplique/latest/"
+    icon: "/assets/icons/docs.png"

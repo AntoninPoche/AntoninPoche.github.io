@@ -1,0 +1,21 @@
+title: "🪄 Interpreto: An Explainability Library for Transformers"
+authors: "<strong>Antonin Poché</strong>*, Thomas Mullor, Gabriele Sarti, Frédéric Boisnard, Corentin Friedrich, Charlotte Claye, François Hoofd, Raphael Bernas, Céline Hudelot, Fanny Jourdan*"
+date: "2025"
+venue: "Open-source library"
+description: |
+  Interpreto is a Python library for post hoc explainability of text HuggingFace models, from early BERT variants to LLMs. It provides two complementary families of methods: <strong>attributions</strong> and <strong>concept-based explanations</strong>. The library connects recent research to practical tooling for data scientists, aiming to make explanations accessible to end users. It includes documentation, examples, and tutorials.
+  Interpreto supports both classification and generation models through a unified API. A key differentiator is its concept-based functionality, which goes beyond feature-level attributions and is uncommon in existing libraries.
+illustration: "/assets/img/interpreto.png"
+
+links:
+  - label: "GitHub"
+    href: "https://github.com/FOR-sight-ai/interpreto"
+    icon: "/assets/icons/github.png"
+    new_tab: true
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2512.09730"
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Docs"
+    href: "https://for-sight-ai.github.io/interpreto/"
+    icon: "/assets/icons/docs.png"

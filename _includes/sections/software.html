@@ -1,4 +1,6 @@
-<div class="card">
-  <p><a class="link" href="https://github.com/FOR-sight-ai/interpreto">Interpreto</a></p>
-  <p><a class="link" href="https://github.com/deel-ai/xplique">Xplique</a></p>
+<div class="contribution-list">
+  {% for id in site.data.softwares.index %}
+  {% assign item = site.data.softwares[id] %}
+  {% include contribution.html item=item %}
+  {% endfor %}
 </div>
