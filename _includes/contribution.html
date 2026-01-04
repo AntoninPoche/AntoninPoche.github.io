@@ -41,8 +41,11 @@
 
     {% if include.item.illustration %}
     <div class="contribution-figure">
-        <img class="contribution-illustration" src="{{ include.item.illustration | relative_url }}"
-            alt="Illustration for {{ include.item.title }}">
+        <button class="contribution-illustration-btn" type="button" aria-label="Open illustration"
+            data-full="{{ include.item.illustration | relative_url }}">
+            <img class="contribution-illustration" src="{{ include.item.illustration | relative_url }}"
+                alt="Illustration for {{ include.item.title }}" loading="lazy">
+        </button>
     </div>
     {% endif %}
 </div>

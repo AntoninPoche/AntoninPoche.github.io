@@ -2,10 +2,10 @@
   title: "Intro"
 - id: research
   title: "Research"
-- id: software
-  title: "Software"
 - id: news
   title: "News"
+- id: software
+  title: "Software"
 - id: publications
   title: "Publications"
 - id: talks

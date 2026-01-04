@@ -144,14 +144,7 @@ body {
   border-radius: 14px;
   padding: 14px;
 
-  transition: transform 180ms ease, box-shadow 180ms ease;
-  will-change: transform;
   background: var(--bg);
-}
-
-.contribution:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .contribution-main {
@@ -266,6 +259,76 @@ body {
   }
 }
 
+/* Clickable illustration */
+.contribution-illustration-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+/* Optional hover zoom (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .contribution-illustration-btn:hover .contribution-illustration {
+    transform: scale(1.03);
+  }
+}
+
+.contribution-illustration {
+  width: 170px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 0;
+
+  /* smooth hover */
+  transition: transform 160ms ease;
+}
+
+/* Lightbox overlay */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 1000;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox-inner {
+  max-width: min(1100px, 95vw);
+  max-height: 92vh;
+  width: 100%;
+  position: relative;
+}
+
+.lightbox-img {
+  width: 100%;
+  height: 100%;
+  max-height: 92vh;
+  object-fit: contain;
+  /* never crop */
+  background: #fff;
+}
+
+/* Close button */
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  border: none;
+  border-radius: 10px;
+  padding: 8px 10px;
+
+  cursor: pointer;
+}
+
 /* News styles ---------------------------------------------------------------------------------- */
 .news-list {
   list-style: none;
@@ -336,6 +399,10 @@ body {
   gap: 8px;
   padding: 12px 16px;
   overflow-x: auto;
+  max-width: 980px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topnav-tab {
@@ -353,8 +420,13 @@ body {
 
 .content {
   padding: 24px 16px 80px;
+
   max-width: 980px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .section {
   padding: 28px 0;

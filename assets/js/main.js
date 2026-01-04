@@ -90,12 +90,65 @@
   }
 
   // -----------------------------
+  // Contribution illustration zoom
+  // -----------------------------
+  function initIllustrationLightbox() {
+    // Create overlay once
+    let box = document.querySelector(".lightbox");
+    if (!box) {
+      box = document.createElement("div");
+      box.className = "lightbox";
+      box.innerHTML = `
+        <div class="lightbox-inner">
+          <button class="lightbox-close" type="button" aria-label="Close">Close</button>
+          <img class="lightbox-img" alt="Expanded illustration">
+        </div>
+      `;
+      document.body.appendChild(box);
+    }
+
+    const imgEl = box.querySelector(".lightbox-img");
+    const closeBtn = box.querySelector(".lightbox-close");
+
+    function open(src) {
+      imgEl.src = src;
+      box.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function close() {
+      box.classList.remove("is-open");
+      imgEl.removeAttribute("src");
+      document.body.style.overflow = "";
+    }
+
+    // Open on click from any contribution illustration
+    document.querySelectorAll(".contribution-illustration-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const src = btn.dataset.full;
+        if (src) open(src);
+      });
+    });
+
+    // Close interactions
+    closeBtn.addEventListener("click", close);
+    box.addEventListener("click", (e) => {
+      if (e.target === box) close(); // click outside image
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && box.classList.contains("is-open")) close();
+    });
+  }
+
+
+  // -----------------------------
   // Init everything once DOM ready
   // -----------------------------
   function initAll() {
     initTopNav();
     initContributionToggles();
     initNewsToggle();
+    initIllustrationLightbox();
   }
 
   if (document.readyState === "loading") {
