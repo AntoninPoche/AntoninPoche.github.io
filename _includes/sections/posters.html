@@ -1,0 +1,9 @@
+<div class="poster-grid">
+    {% for p in site.data.posters %}
+    <div class="poster-frame">
+        <button class="poster-btn" type="button" aria-label="Open poster" data-full="{{ p.img | relative_url }}">
+            <img class="poster-img" src="{{ p.img | relative_url }}" alt="Poster">
+        </button>
+    </div>
+    {% endfor %}
+</div>

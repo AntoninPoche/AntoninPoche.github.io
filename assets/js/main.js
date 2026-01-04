@@ -123,12 +123,14 @@
     }
 
     // Open on click from any contribution illustration
-    document.querySelectorAll(".contribution-illustration-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const src = btn.dataset.full;
-        if (src) open(src);
+    document
+      .querySelectorAll(".contribution-illustration-btn, .poster-btn")
+      .forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const src = btn.dataset.full;
+          if (src) open(src);
+        });
       });
-    });
 
     // Close interactions
     closeBtn.addEventListener("click", close);
