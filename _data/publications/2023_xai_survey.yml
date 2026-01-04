@@ -1,0 +1,19 @@
+title: "Natural Example-Based Explainability: a Survey"
+authors: "<strong>Antonin Poché</strong>*, Lucas Hervier∗, and Mohamed-Chafik Bakkay"
+date: "2023"
+venue: "xAI (World Conference on eXplainable Artificial Intelligence)"
+  
+illustration: "/assets/img/2023_xai_survey.png"
+
+links:
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2309.03234"
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Cite"
+    href: "https://scholar.googleusercontent.com/scholar.bib?q=info:r4u_UHTBhboJ:scholar.google.com/&output=citation&scisdr=CrywyfP0EPPLyZxz8M0:ALhkC2QAAAAAaVp16M2m0eTslPws9ZjGqBP1a8k&scisig=ALhkC2QAAAAAaVp16H0DLI0dy8Xb-lLMWSHmtUg&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1"
+    icon: "/assets/icons/scholar.png"
+    new_tab: true
+  - label: "Code"
+    href: "https://deel-ai.github.io/xplique/latest/api/example_based/api_example_based/"
+    icon: "/assets/icons/github.png"

@@ -1,0 +1,21 @@
+title: "ConSim: Measuring Concept-Based Explanations’ Effectiveness with Automated Simulatability"
+authors: "<strong>Antonin Poché</strong>, Alon Jacovi, Agustin Martin Picard, Victor Boutin, and Fanny Jourdan."
+date: "2025"
+venue: "ACL"
+description: |
+  ConSim is a metric for concept-based explanations based on simulatability and user-llms.
+  It shows consistent methods ranking across datasets, models, and user-llms. Furthermore, it correlates with faithfulness and complexity.
+illustration: "/assets/img/2025_acl_consim.png"
+
+links:
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2501.05855"
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Cite"
+    href: "https://scholar.googleusercontent.com/scholar.bib?q=info:RUvX-tpMKLkJ:scholar.google.com/&output=citation&scisdr=CrywyfP0EPPLyZx1R4s:ALhkC2QAAAAAaVpzX4tpLghYBB4jFcXAs6y3exo&scisig=ALhkC2QAAAAAaVpzXx-WU4hLIjxkDXDSkaN5Yxg&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1"
+    icon: "/assets/icons/scholar.png"
+    new_tab: true
+  - label: "Code"
+    href: "https://for-sight-ai.github.io/interpreto/api/concepts/metrics/consim/"
+    icon: "/assets/icons/github.png"

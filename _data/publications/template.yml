@@ -1,0 +1,20 @@
+title: "Title"
+authors: "<strong>Antonin Poché</strong>"
+date: "2025"
+venue: "Arxiv"
+description: |
+  
+illustration: ""
+
+links:
+  - label: "Paper"
+    href: ""
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Cite"
+    href: ""
+    icon: "/assets/icons/scholar.png"
+    new_tab: true
+  - label: "Poster"
+    href: ""
+    icon: ""

@@ -1,0 +1,15 @@
+title: "Guidelines to explain machine learning algorithms"
+authors: "Frédéric Boisnard, Ryma Boumazouza, Mélanie Ducoffe, Thomas Fel, Estèle Glize, Lucas Hervier, Vincent Mussot, Agustin Martin Picard, <strong>Antonin Poché</strong>, and David Vigouroux"
+date: "2023"
+venue: "Arxiv"
+  
+illustration: "/assets/icons/deel.png"
+
+links:
+  - label: "Paper"
+    href: ""
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Cite"
+    href: "https://scholar.googleusercontent.com/scholar.bib?q=info:0O-Vo04ARW8J:scholar.google.com/&output=citation&scisdr=CrywyfP0EPPLyZxxULk:ALhkC2QAAAAAaVp3SLmTdp_L2SSY6NHDqflwhdc&scisig=ALhkC2QAAAAAaVp3SCU2EULiFTRD0XZbPWHUkKM&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1"
+    icon: "/assets/icons/scholar.png"
