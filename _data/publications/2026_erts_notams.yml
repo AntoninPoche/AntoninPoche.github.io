@@ -1,0 +1,13 @@
+title: "Bringing NLP Explainability to Critical Sectors: A Case Study on NOTAMs in Aviation"
+authors: "Vincent Mussot, François Hoofd, Fanny Jourdan, <strong>Antonin Poché</strong>"
+date: "2026"
+venue: "ERTS"
+description: |
+  The aviation industry operates within a highly critical and regulated context, where safety and reliability are paramount. As Natural Language Processing (NLP) systems become increasingly integrated into such domains, ensuring their trustworthiness and transparency is essential. This paper addresses the importance of explainability (XAI) in critical sectors like aviation by studying NOTAMs (Notice to Airmen), a core component of aviation communication. We provide a comprehensive overview of XAI methods applied to NLP classification task, proposing a categorization framework tailored to practical needs in critical applications. We also propose a new method to create aggregated explanations from local attributions. Using real-world examples, we demonstrate how XAI can uncover biases in models and datasets, leading to actionable insights for improving both. This work highlights the role of XAI in building safer and more robust NLP systems for critical sectors and also shows that academic efforts must be pursued to achieve trust in models and XAI itself.
+illustration: "/assets/img/2026_erts_notams.png"
+
+links:
+  - label: "Paper"
+    href: "https://hal.science/hal-05513839"
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
