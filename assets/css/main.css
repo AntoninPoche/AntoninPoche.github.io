@@ -505,6 +505,47 @@ body {
   border: 1px solid var(--border);
 }
 
+/* Resume styles -------------------------------------------------------------------------------- */
+.resume {
+  display: grid;
+  gap: 12px;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.resume-link {
+  color: var(--link);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.resume-frame {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.resume-pdf {
+  width: 100%;
+  height: 720px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .resume-pdf {
+    height: 520px;
+  }
+}
+
 /* Basic small-screen behavior */
 @media (max-width: 900px) {
   .layout {
