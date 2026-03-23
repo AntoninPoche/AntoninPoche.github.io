@@ -11,3 +11,6 @@ links:
     href: "https://hal.science/hal-05513839"
     icon: "/assets/icons/arxiv.png"
     new_tab: true
+  - label: "Cite"
+    href: "https://scholar.googleusercontent.com/scholar.bib?q=info:QlOLkC6_Vf4J:scholar.google.com/&output=citation&scisdr=Cjznl2xmEPPLyQeFPvI:ADi0EEUAAAAAacGDJvL3wf7LhTZnMqzgt5QaPb4&scisig=ADi0EEUAAAAAacGDJvfX5IABzza0VxjEklQWPmw&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1"
+    icon: "/assets/icons/scholar.png"
