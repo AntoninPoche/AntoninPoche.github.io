@@ -1,4 +1,5 @@
 (function () {
+  const topnav = document.querySelector(".topnav");
   const tabs = Array.from(document.querySelectorAll(".topnav-tab"));
   const sections = Array.from(document.querySelectorAll(".section"));
 
@@ -19,6 +20,43 @@
     });
   }
 
+  function getNavHeight() {
+    return topnav ? topnav.getBoundingClientRect().height : 0;
+  }
+
+  function getSectionAnchorOffset(section) {
+    return parseFloat(window.getComputedStyle(section).paddingTop) || 0;
+  }
+
+  function scrollToSection(section) {
+    const navHeight = getNavHeight();
+    const anchorOffset = getSectionAnchorOffset(section);
+    const sectionTop = window.scrollY + section.getBoundingClientRect().top;
+    const targetTop = Math.max(0, sectionTop - navHeight + anchorOffset);
+
+    window.scrollTo({
+      top: targetTop,
+      behavior: "smooth",
+    });
+  }
+
+  function getActiveSectionId() {
+    if (sections.length === 0) return null;
+
+    const navHeight = getNavHeight();
+    const switchOffset = 6;
+    let activeId = sections[0].id;
+
+    sections.forEach((section) => {
+      const anchorLineTop = section.getBoundingClientRect().top + getSectionAnchorOffset(section);
+      if (anchorLineTop <= navHeight + switchOffset) {
+        activeId = section.id;
+      }
+    });
+
+    return activeId;
+  }
+
   function initTopNav() {
     tabs.forEach((tab) => {
       tab.addEventListener("click", (event) => {
@@ -27,33 +65,30 @@
         if (!section) return;
 
         event.preventDefault();
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        scrollToSection(section);
         history.replaceState(null, "", `#${id}`);
         setActiveTab(id);
       });
     });
 
-    if (sections.length > 0 && tabs.length > 0) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const visible = entries
-            .filter((entry) => entry.isIntersecting)
-            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    let isTicking = false;
 
-          if (visible) setActiveTab(visible.target.id);
-        },
-        {
-          root: null,
-          rootMargin: "-18% 0px -55% 0px",
-          threshold: [0.15, 0.35, 0.6, 0.85],
-        }
-      );
-
-      sections.forEach((section) => observer.observe(section));
+    function updateActiveTabFromScroll() {
+      isTicking = false;
+      const activeId = getActiveSectionId();
+      if (activeId) setActiveTab(activeId);
     }
 
-    const hash = (location.hash || "").replace("#", "");
-    setActiveTab(hash || sections[0]?.id);
+    function requestActiveUpdate() {
+      if (isTicking) return;
+      isTicking = true;
+      window.requestAnimationFrame(updateActiveTabFromScroll);
+    }
+
+    window.addEventListener("scroll", requestActiveUpdate, { passive: true });
+    window.addEventListener("resize", requestActiveUpdate);
+
+    requestActiveUpdate();
   }
 
   function initContributionToggles() {
