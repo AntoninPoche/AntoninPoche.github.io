@@ -5,7 +5,7 @@
   --bg: #f5f7fb;
   --surface: #ffffff;
   --sidebar-bg: #e8eef7;
-  --topnav-bg: rgba(248, 250, 253, 0.96);
+  --topnav-bg: rgba(244, 247, 252, 0.72);
 
   --text: #172231;
   --muted: #5d6978;
@@ -146,7 +146,6 @@ a {
   top: 0;
   z-index: 10;
   background: var(--topnav-bg);
-  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(8px);
 }
 
@@ -155,9 +154,12 @@ a {
   gap: 8px;
   width: 100%;
   max-width: var(--content-w);
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 12px 16px;
   overflow-x: auto;
+  border: 1px solid rgba(189, 203, 221, 0.8);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.68);
 }
 
 .topnav-tab {
@@ -368,35 +370,46 @@ a {
   }
 }
 
+.news {
+  display: grid;
+  gap: 10px;
+}
+
 .news-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 8px;
+  gap: 10px;
 }
 
 .news-item {
   display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 12px;
-  align-items: baseline;
+  grid-template-columns: 132px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fafcff;
 }
 
 .news-date {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--link);
+  font-weight: 600;
+  letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
 .news-link,
 .news-text {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.55;
+  color: var(--text);
 }
 
 .news-link {
-  color: var(--link);
   text-decoration: none;
 }
 
@@ -413,16 +426,20 @@ a {
 }
 
 .news-toggle {
-  margin-top: 10px;
-  padding: 0;
-  border: none;
-  background: transparent;
+  margin-top: 2px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #f7faff;
   color: var(--link);
   font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
 }
 
 .news-toggle:hover {
+  background: var(--link-soft);
+  border-color: var(--border-strong);
   color: var(--link-hover);
 }
 
@@ -575,7 +592,7 @@ a {
 
   .news-item {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 6px;
   }
 
   .poster-frame {
