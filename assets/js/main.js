@@ -70,12 +70,12 @@
 
       const needsToggle = text.scrollHeight > text.clientHeight + 1;
       button.style.display = needsToggle ? "inline" : "none";
-      button.textContent = "Read more";
+      button.textContent = "More";
       button.setAttribute("aria-expanded", "false");
 
       if (wasExpanded && needsToggle) {
         card.classList.add("is-expanded");
-        button.textContent = "Show less";
+        button.textContent = "Less";
         button.setAttribute("aria-expanded", "true");
       }
     }
@@ -90,7 +90,7 @@
       button.addEventListener("click", () => {
         const expanded = card.classList.toggle("is-expanded");
         button.setAttribute("aria-expanded", expanded ? "true" : "false");
-        button.textContent = expanded ? "Show less" : "Read more";
+        button.textContent = expanded ? "Less" : "More";
       });
     });
 
@@ -109,7 +109,7 @@
     button.addEventListener("click", () => {
       const expanded = news.classList.toggle("is-expanded");
       button.setAttribute("aria-expanded", expanded ? "true" : "false");
-      button.textContent = expanded ? "Show recent only" : "Show older updates";
+      button.textContent = expanded ? "Less" : "More";
     });
   }
 

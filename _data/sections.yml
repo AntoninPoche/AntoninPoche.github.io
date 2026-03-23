@@ -1,13 +1,13 @@
 - id: intro
-  title: "Overview"
+  title: "Intro"
 - id: research
   title: "Research"
-- id: publications
-  title: "Publications"
-- id: software
-  title: "Open-source"
 - id: news
   title: "News"
+- id: software
+  title: "Software"
+- id: publications
+  title: "Publications"
 - id: posters
   title: "Posters"
 - id: teaching

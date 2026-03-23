@@ -2,8 +2,6 @@ title: "Natural Example-Based Explainability: a Survey"
 authors: "<strong>Antonin Poché</strong>*, Lucas Hervier∗, and Mohamed-Chafik Bakkay"
 date: "2023"
 venue: "xAI (World Conference on eXplainable Artificial Intelligence)"
-description: |
-  Survey of natural example-based explanation methods, with an overview of the main families of approaches, their evaluation criteria, and open research questions for the field.
 illustration: "/assets/img/2023_xai_survey.png"
 
 links:

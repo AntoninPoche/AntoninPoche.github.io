@@ -1,9 +1,7 @@
 title: "Guidelines to explain machine learning algorithms"
 authors: "Frédéric Boisnard, Ryma Boumazouza, Mélanie Ducoffe, Thomas Fel, Estèle Glize, Lucas Hervier, Vincent Mussot, Agustin Martin Picard, <strong>Antonin Poché</strong>, and David Vigouroux"
 date: "2023"
-venue: "arXiv"
-description: |
-  Practical guidelines for choosing and presenting explainability methods depending on the task, users, and operational constraints of an application.
+venue: "Arxiv"
 illustration: "/assets/icons/deel.png"
 
 links:

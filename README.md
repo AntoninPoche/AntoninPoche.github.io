@@ -31,15 +31,14 @@ That means the section order and labels are controlled in one place: [`_data/sec
 Most content is data-driven:
 
 - [`_data/sidebar.yml`](_data/sidebar.yml): profile, affiliations, contact links
-- [`_data/intro.yml`](_data/intro.yml): homepage overview hero
-- [`_data/research.yml`](_data/research.yml): research summary and focus cards
-- [`_data/teaching.yml`](_data/teaching.yml): teaching timeline
 - [`_data/news/index.yml`](_data/news/index.yml): news feed
 - [`_data/publications/index.yml`](_data/publications/index.yml): ordered list of publication ids
 - [`_data/publications/`](./_data/publications): publication entries
 - [`_data/softwares/index.yml`](_data/softwares/index.yml): ordered list of software ids
 - [`_data/softwares/`](./_data/softwares): software entries
-- [`_data/posters.yml`](_data/posters.yml): poster gallery
+- [`_data/posters.yml`](_data/posters.yml): poster image list
+
+The narrative sections such as intro, research, teaching, and resume are written directly in the section partials under [`_includes/sections/`](./_includes/sections).
 
 Reusable content cards for publications and software are rendered through [`_includes/contribution.html`](_includes/contribution.html).
 

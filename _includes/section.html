@@ -1,8 +1,5 @@
 <section id="{{ include.id }}" class="section section-{{ include.id }}" data-section="{{ include.id }}">
-  <header class="section-header">
-    <p class="section-index">0{{ include.index }}</p>
-    <h2 class="section-title">{{ include.title }}</h2>
-  </header>
+  <h2 class="section-title">{{ include.title }}</h2>
 
   <div class="section-body">
     {% include sections/{{ include.id }}.html %}

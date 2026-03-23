@@ -1,24 +1,6 @@
-- title: "Interpreto poster"
-  event: "ANITI Days"
-  year: "2026"
-  img: "/assets/posters/2026_anitidays_interpreto.png"
-- title: "Interpreto poster"
-  event: "IRT PhD Day"
-  year: "2026"
-  img: "/assets/posters/2026_irtphdday_interpreto.png"
-- title: "Interpreto poster"
-  event: "Mobilit.AI"
-  year: "2025"
-  img: "/assets/posters/2025_mobilitai_interpreto.png"
-- title: "ConSim poster"
-  event: "ACL"
-  year: "2025"
-  img: "/assets/posters/2025_acl_consim.png"
-- title: "Natural Example-Based Explainability survey"
-  event: "Confiance.ai"
-  year: "2024"
-  img: "/assets/posters/2024_confiance_survey.png"
-- title: "Guidelines to explain machine learning algorithms"
-  event: "Confiance.ai"
-  year: "2024"
-  img: "/assets/posters/2024_confiance_guidelines.png"
+- img: /assets/posters/2026_anitidays_interpreto.png
+- img: /assets/posters/2026_irtphdday_interpreto.png
+- img: /assets/posters/2025_mobilitai_interpreto.png
+- img: /assets/posters/2025_acl_consim.png
+- img: /assets/posters/2024_confiance_survey.png
+- img: /assets/posters/2024_confiance_guidelines.png

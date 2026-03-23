@@ -10,7 +10,7 @@ title: Home
 
   <div class="content">
     {% for s in site.data.sections %}
-      {% include section.html id=s.id title=s.title index=forloop.index %}
+      {% include section.html id=s.id title=s.title %}
     {% endfor %}
   </div>
 </main>
