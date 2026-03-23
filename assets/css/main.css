@@ -195,8 +195,21 @@ a {
 }
 
 .section {
-  padding: 28px 0;
+  position: relative;
+  padding: 28px 0 28px 18px;
+  margin-left: 2px;
   border-bottom: 1px solid var(--border);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  bottom: 28px;
+  left: 0;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #2f5ea8 0%, #9eb2d0 100%);
 }
 
 .section:last-child {
@@ -588,6 +601,10 @@ a {
 @media (max-width: 600px) {
   .content {
     padding: 20px 14px 60px;
+  }
+
+  .section {
+    padding-left: 14px;
   }
 
   .news-item {
