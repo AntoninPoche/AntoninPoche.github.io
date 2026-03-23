@@ -3,19 +3,27 @@
         {% for n in site.data.news.index limit:10 %}
         <li class="news-item">
             <span class="news-date">{{ n.date }}</span>
-            <a class="news-link" href="{{ n.href }}">{{ n.title }}</a>
+            {% if n.href and n.href != '' and n.href != '#' %}
+            <a class="news-link" href="{{ n.href }}" {% if n.href contains '://' %}target="_blank" rel="noopener"{% endif %}>{{ n.title }}</a>
+            {% else %}
+            <span class="news-text">{{ n.title }}</span>
+            {% endif %}
         </li>
         {% endfor %}
 
         {% for n in site.data.news.index offset:10 %}
         <li class="news-item news-item-hidden">
             <span class="news-date">{{ n.date }}</span>
-            <a class="news-link" href="{{ n.href }}">{{ n.title }}</a>
+            {% if n.href and n.href != '' and n.href != '#' %}
+            <a class="news-link" href="{{ n.href }}" {% if n.href contains '://' %}target="_blank" rel="noopener"{% endif %}>{{ n.title }}</a>
+            {% else %}
+            <span class="news-text">{{ n.title }}</span>
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
 
     {% if site.data.news.index.size > 10 %}
-    <button class="news-toggle" type="button" aria-expanded="false">More</button>
+    <button class="news-toggle" type="button" aria-expanded="false">Show older updates</button>
     {% endif %}
 </div>

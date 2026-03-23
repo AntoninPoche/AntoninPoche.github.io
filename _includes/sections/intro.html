@@ -1,10 +1,26 @@
-<div class="sections-paragraphs">
-  <p>Hello, welcome to my website. I am a second-year PhD student in <b>Interpretability</b> for <b>Natural Language
-      Processing</b> models.
-    I do my PhD between the IRT Saint Exupéry and the IRIT, both in Toulouse France.
-    I am under the supervision of Pr. Nicholas Asher, Pr. Philippe Muller, and Dr. Fanny Jourdan.</p>
-  <p>Core maintainer of the <a class="link" href="https://github.com/FOR-sight-ai/interpreto">Interpreto</a> and
-    <a class="link" href="https://github.com/deel-ai/xplique">Xplique</a> open-source libraries.
-    My goal is to provide easy access to useful explanations.
-  </p>
+<div class="hero">
+  <div class="hero-copy">
+    <p class="hero-eyebrow">{{ site.data.intro.eyebrow }}</p>
+    <h3 class="hero-headline">{{ site.data.intro.headline }}</h3>
+    <p class="hero-lead">{{ site.data.intro.lead }}</p>
+    <p class="hero-summary">{{ site.data.intro.summary }}</p>
+
+    <div class="hero-actions">
+      {% for action in site.data.intro.actions %}
+      <a class="button{% if forloop.index > 1 %} button-secondary{% endif %}" href="{{ action.href }}">{{ action.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="hero-panel">
+    <p class="hero-panel-title">At a glance</p>
+    <ul class="hero-highlights">
+      {% for item in site.data.intro.highlights %}
+      <li class="hero-highlight">
+        <span class="hero-highlight-label">{{ item.label }}</span>
+        <strong class="hero-highlight-value">{{ item.value }}</strong>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

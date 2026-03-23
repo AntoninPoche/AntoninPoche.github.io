@@ -3,8 +3,8 @@ authors: "Thomas Fel, Lucas Hervier, <strong>Antonin Poché</strong>, David Vigo
 date: "2022"
 venue: "Workshop on Explainable Artificial Intelligence for Computer Vision (CVPR)"
 description: |
-  Xplique (pronounced \ɛks.plik\) is a Python toolkit dedicated to explainability. The goal of this library is to gather the state of the art of Explainable AI to help you understand your complex neural network models. Originally built for Tensorflow's model it also works for PyTorch models partially.
-  The library is composed of several modules, the Attributions Methods module implements various methods (e.g Saliency, Grad-CAM, Integrated-Gradients...), with explanations, examples and links to official papers. The Feature Visualization module allows to see how neural networks build their understanding of images by finding inputs that maximize neurons, channels, layers or compositions of these elements. The Concepts module allows you to extract human concepts from a model and to test their usefulness with respect to a class. Finally, the Metrics module covers the current metrics used in explainability. Used in conjunction with the Attribution Methods module, it allows you to test the different methods or evaluate the explanations of a model.
+  Xplique is an explainability toolbox for neural networks that brings attribution methods, concept tools, feature visualization, and evaluation metrics into one package. It was originally built for TensorFlow and also supports part of the PyTorch ecosystem.
+  I contribute to the library and the broader effort to make explainability methods easier to use, compare, and deploy in practice.
 illustration: "/assets/img/xplique.png"
 
 links:
@@ -23,3 +23,4 @@ links:
   - label: "Paper"
     href: "https://arxiv.org/abs/2206.04394"
     icon: "/assets/icons/arxiv.png"
+    new_tab: true

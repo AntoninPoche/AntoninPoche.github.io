@@ -1,9 +1,13 @@
 <div class="poster-grid">
     {% for p in site.data.posters %}
-    <div class="poster-frame">
-        <button class="poster-btn" type="button" aria-label="Open poster" data-full="{{ p.img | relative_url }}">
-            <img class="poster-img" src="{{ p.img | relative_url }}" alt="Poster">
+    <article class="poster-frame">
+        <button class="poster-btn" type="button" aria-label="Open {{ p.title }}" data-full="{{ p.img | relative_url }}">
+            <img class="poster-img" src="{{ p.img | relative_url }}" alt="{{ p.title }}" loading="lazy">
         </button>
-    </div>
+        <div class="poster-caption">
+            <h3 class="poster-title">{{ p.title }}</h3>
+            <p class="poster-meta">{{ p.event }}{% if p.year %} · {{ p.year }}{% endif %}</p>
+        </div>
+    </article>
     {% endfor %}
 </div>

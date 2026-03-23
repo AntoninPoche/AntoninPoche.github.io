@@ -1,6 +1,7 @@
 photo: "/assets/img/profile.png"
 name: "Antonin Poché"
 title: "PhD Student in XAI for NLP"
+summary: "Interpretability for NLP, concept-based explanations, and open-source tooling."
 location: |
   IRT Saint Exupéry & IRIT
   Toulouse, France

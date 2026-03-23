@@ -1,0 +1,18 @@
+eyebrow: "Explainability for language models"
+headline: "I design methods and tools that make NLP models easier to understand, evaluate, and trust."
+lead: "I am a PhD student working between IRT Saint Exupery and IRIT in Toulouse, with a focus on interpretability for NLP and conversational explainability."
+summary: "Alongside my research, I maintain Interpreto and contribute to Xplique to turn explainability research into software that practitioners can use."
+
+highlights:
+  - label: "Current role"
+    value: "PhD student in XAI for NLP"
+  - label: "Affiliation"
+    value: "IRT Saint Exupery and IRIT, Toulouse"
+  - label: "Open-source"
+    value: "Core maintainer of Interpreto and contributor to Xplique"
+
+actions:
+  - label: "See publications"
+    href: "#publications"
+  - label: "Explore software"
+    href: "#software"

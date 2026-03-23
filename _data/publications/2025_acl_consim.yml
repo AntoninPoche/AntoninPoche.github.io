@@ -3,8 +3,7 @@ authors: "<strong>Antonin Poché</strong>, Alon Jacovi, Agustin Martin Picard, V
 date: "2025"
 venue: "ACL"
 description: |
-  ConSim is a metric for concept-based explanations based on simulatability and user-llms.
-  It shows consistent methods ranking across datasets, models, and user-llms. Furthermore, it correlates with faithfulness and complexity.
+  ConSim evaluates concept-based explanations through automated simulatability. It produces stable method rankings across datasets, models, and evaluator LLMs, and its scores correlate with faithfulness and explanation complexity.
 illustration: "/assets/img/2025_acl_consim.png"
 
 links:
@@ -19,3 +18,4 @@ links:
   - label: "Code"
     href: "https://for-sight-ai.github.io/interpreto/api/concepts/metrics/consim/"
     icon: "/assets/icons/github.png"
+    new_tab: true

@@ -1,18 +1,31 @@
-<div class="sections-paragraphs">
-  <p>The goal of my PhD is to build an interpretability agent (conversational explainability) for language models.
-    However, I find that the quality and consistency of explanations are lacking, in particular with concept-based
-    explanations.
-  </p>
-  <p>Which is why I currently work on improving such explanations.
-    Notably, the first publication of my PhD,
-    <a class="link" href="https://arxiv.org/abs/2501.05855">ConSim (Poché et al. ACL 2025)</a>,
-    aims at evaluating the usefulness of concept-based explanations in NLP.
-  </p>
-  <p>The future directions I would like to explore are:</p>
-  <ul>
-    <li>Improving the interpretation of concept-based explanations.</li>
-    <li>Building contrastive concept-based explanations.</li>
-    <li>Example-based explanations for language models.</li>
-  </ul>
-  <p>If these subjects are of interest to you, feel free to contact me, I would be happy to collaborate.</p>
+<div class="research-layout">
+  <div class="research-copy">
+    <p class="research-lead">{{ site.data.research.lead }}</p>
+    {% for paragraph in site.data.research.paragraphs %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+
+  <div class="research-cards">
+    {% for card in site.data.research.cards %}
+    <article class="research-card">
+      <h3 class="research-card-title">{{ card.title }}</h3>
+      {% if card.body %}
+      <p class="research-card-body">{{ card.body }}</p>
+      {% endif %}
+      {% if card.list %}
+      <ul class="research-card-list">
+        {% for item in card.list %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="research-cta">
+    <p class="research-note">{{ site.data.research.cta_text }}</p>
+    <a class="button button-secondary" href="{{ site.data.research.cta_href }}" target="_blank" rel="noopener">{{ site.data.research.cta_label }}</a>
+  </div>
 </div>

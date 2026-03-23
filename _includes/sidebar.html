@@ -4,12 +4,18 @@
 
     <div class="sidebar-name">{{ site.data.sidebar.name }}</div>
     <div class="sidebar-title">{{ site.data.sidebar.title }}</div>
+    <p class="sidebar-summary">{{ site.data.sidebar.summary }}</p>
     <div class="sidebar-location">{{ site.data.sidebar.location | newline_to_br }}</div>
     <div class="sidebar-email">{{ site.data.sidebar.email }}</div>
 
+    <div class="sidebar-actions">
+      <a class="sidebar-cta" href="#publications">Publications</a>
+      <a class="sidebar-cta sidebar-cta-secondary" href="{{ '/assets/resume/resume.pdf' | relative_url }}">Resume</a>
+    </div>
+
     <div class="sidebar-icons">
       {% for c in site.data.sidebar.contacts %}
-      <a class="sidebar-icon" href="{{ c.href }}" aria-label="{{ c.label }}" title="{{ c.label }}">
+      <a class="sidebar-icon" href="{{ c.href }}" aria-label="{{ c.label }}" title="{{ c.label }}" target="_blank" rel="noopener">
         {% if c.icon %}
         <img class="sidebar-icon-img" src="{{ c.icon | relative_url }}" alt="{{ c.label }}">
         {% else %}
