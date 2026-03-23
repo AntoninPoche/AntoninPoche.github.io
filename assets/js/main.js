@@ -1,4 +1,5 @@
 (function () {
+  const CLICK_OFFSET_GAP = 18;
   const topnav = document.querySelector(".topnav");
   const tabs = Array.from(document.querySelectorAll(".topnav-tab"));
   const sections = Array.from(document.querySelectorAll(".section"));
@@ -28,11 +29,20 @@
     return parseFloat(window.getComputedStyle(section).paddingTop) || 0;
   }
 
+  function getActiveTriggerLine() {
+    const navHeight = getNavHeight();
+    const extraOffset = Math.max(72, Math.min(160, window.innerHeight * 0.22));
+    return navHeight + extraOffset;
+  }
+
   function scrollToSection(section) {
     const navHeight = getNavHeight();
     const anchorOffset = getSectionAnchorOffset(section);
     const sectionTop = window.scrollY + section.getBoundingClientRect().top;
-    const targetTop = Math.max(0, sectionTop - navHeight + anchorOffset);
+    const targetTop = Math.max(
+      0,
+      sectionTop - navHeight + anchorOffset - CLICK_OFFSET_GAP
+    );
 
     window.scrollTo({
       top: targetTop,
@@ -43,13 +53,12 @@
   function getActiveSectionId() {
     if (sections.length === 0) return null;
 
-    const navHeight = getNavHeight();
-    const switchOffset = 6;
+    const triggerLine = getActiveTriggerLine();
     let activeId = sections[0].id;
 
     sections.forEach((section) => {
       const anchorLineTop = section.getBoundingClientRect().top + getSectionAnchorOffset(section);
-      if (anchorLineTop <= navHeight + switchOffset) {
+      if (anchorLineTop <= triggerLine) {
         activeId = section.id;
       }
     });
