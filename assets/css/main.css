@@ -253,25 +253,35 @@ a {
 
 .subblock-grid {
   display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 14px;
   width: 100%;
 }
 
-.subblock-grid-intro {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.subblock-grid-intro > .subblock {
+.subblock-grid > .subblock {
   grid-column: span 2;
 }
 
-.subblock-grid-intro > .subblock:nth-last-child(2),
-.subblock-grid-intro > .subblock:last-child {
+/* 1 block: take the full row */
+.subblock-grid > .subblock:first-child:nth-last-child(1) {
+  grid-column: 1 / -1;
+}
+
+/* 2 blocks: split the row in half */
+.subblock-grid > .subblock:first-child:nth-last-child(2),
+.subblock-grid > .subblock:first-child:nth-last-child(2) ~ .subblock {
   grid-column: span 3;
 }
 
-.subblock-grid-research {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+/* 4 blocks: make two balanced rows */
+.subblock-grid > .subblock:first-child:nth-last-child(4),
+.subblock-grid > .subblock:first-child:nth-last-child(4) ~ .subblock {
+  grid-column: span 3;
+}
+
+/* 5 blocks: keep 3 on the first row, widen the last 2 to fill the second row */
+.subblock-grid > .subblock:first-child:nth-last-child(5) ~ .subblock:nth-last-child(-n + 2) {
+  grid-column: span 3;
 }
 
 .subblock {
@@ -299,19 +309,18 @@ a {
   padding-left: 18px;
 }
 
-.subblock-center p {
-  text-align: center;
-}
-
 @media (max-width: 900px) {
-  .subblock-grid-intro,
-  .subblock-grid-research {
+  .subblock-grid {
     grid-template-columns: 1fr;
   }
 
-  .subblock-grid-intro > .subblock,
-  .subblock-grid-intro > .subblock:nth-last-child(2),
-  .subblock-grid-intro > .subblock:last-child {
+  .subblock-grid > .subblock,
+  .subblock-grid > .subblock:first-child:nth-last-child(1),
+  .subblock-grid > .subblock:first-child:nth-last-child(2),
+  .subblock-grid > .subblock:first-child:nth-last-child(2) ~ .subblock,
+  .subblock-grid > .subblock:first-child:nth-last-child(4),
+  .subblock-grid > .subblock:first-child:nth-last-child(4) ~ .subblock,
+  .subblock-grid > .subblock:first-child:nth-last-child(5) ~ .subblock:nth-last-child(-n + 2) {
     grid-column: auto;
   }
 }
