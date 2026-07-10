@@ -1,5 +1,21 @@
+- date: "2026 July"
+  title: "📰 Interpreto got accepted in ACL 2026 Demos (San Diego, USA)"
+  href: "https://aclanthology.org/2026.acl-demo.1/"
+
+- date: "2026 June"
+  title: "👨‍🏫 Give tutorial on Explainability for Fairness FAccT (Montreal, Canada)"
+  href: "https://github.com/FOR-sight-ai/interpreto/blob/main/docs/notebooks/examples/fairness_applications.ipynb"
+
+- date: "2026 June"
+  title: "🔊 Talk on Concept-based Explanations at ETS (Montreal, Canada)"
+  href: "https://github.com/FOR-sight-ai/interpreto"
+
+- date: "2026 June"
+  title: "🔊 Talk on Concept-based Explanations at Mila (Montreal, Canada)"
+  href: "https://github.com/FOR-sight-ai/interpreto"
+
 - date: "2026 March"
-  title: "🇩🇪 Research stay in the XplaiNLP team at TU Berlin (Germany)"
+  title: "🌍 Research stay in the XplaiNLP team at TU Berlin (Germany)"
   href: "https://xplainlp.github.io/"
 
 - date: "2026 March"
@@ -39,12 +55,16 @@
   href: "https://aclanthology.org/2025.acl-long.279/"
 
 - date: "2025 June"
-  title: "🔊 Give tutorial on Explainability for NLP at PFIA Dijon 2025 (France)"
-  href: "https://docs.google.com/presentation/d/1d63bDsLGK8Zhc2HR1AR6G_iY1R1r_Xrx/edit?usp=sharing&ouid=107638376435932051133&rtpof=true&sd=true"
+  title: "👨‍🏫 Give tutorial on Explainability for NLP at PFIA Dijon 2025 (France)"
+  href: "https://docs.google.com/presentation/d/1d63bDsLGK8Zhc2HR1AR6G_iY1R1r_Xrx/"
 
 - date: "2025 April"
   title: "🔊 Talk on Explainability for energy applications at ESIA seasonal school 2025 (Strasbourg, France)"
   href: "#"
+
+- date: "2024 July"
+  title: "👨‍🏫 Give tutorial on Explainability at PFIA La Rochelle 2024 (France)"
+  href: "https://docs.google.com/presentation/d/1jQt8tGHEdjBdyoUbQPATh4GdSIDJebxo/"
 
 - date: "2024 October"
   title: "🚀 Started PhD"
