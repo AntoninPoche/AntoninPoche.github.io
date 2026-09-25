@@ -1,12 +1,15 @@
+{% assign resume_file = site.static_files | where: 'path', '/assets/resume/resume.pdf' | first %}
+{% assign resume_version = resume_file.modified_time | date: '%s' %}
+{% assign resume_url = '/assets/resume/resume.pdf' | relative_url | append: '?v=' | append: resume_version %}
 <div class="resume">
   <div class="resume-actions">
-    <a class="resume-link" href="{{ '/assets/resume/resume.pdf' | relative_url }}">Download resume (PDF)</a>
+    <a class="resume-link" href="{{ resume_url }}">Download resume (PDF)</a>
   </div>
   <div class="resume-frame">
-    <object class="resume-pdf" data="{{ '/assets/resume/resume.pdf' | relative_url }}" type="application/pdf">
+    <object class="resume-pdf" data="{{ resume_url }}" type="application/pdf">
       <p>
         PDF preview not available.
-        <a class="resume-link" href="{{ '/assets/resume/resume.pdf' | relative_url }}">Download resume (PDF)</a>
+        <a class="resume-link" href="{{ resume_url }}">Download resume (PDF)</a>
       </p>
     </object>
   </div>
