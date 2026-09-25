@@ -1,0 +1,18 @@
+title: "Limitations of Automated Simulatability: LLM Simulators Can Bypass Explanations"
+authors: "<strong>Antonin Poché</strong>, Fanny Jourdan, Nils Feldhus, Qianli Wang, Jing Yang, Simon Ostermann, Nicholas Asher, Philippe Muller, Vera Schmitt"
+authors_short: "<strong>A. Poché</strong>, F. Jourdan, …, V. Schmitt"
+date: "2026"
+venue: "BlackboxNLP Reproducibility Challenge (EMNLP)"
+description: |
+  Simulatability evaluates explanations by measuring how well they help a user predict a model's outputs. Automated simulatability uses LLM simulators instead of human evaluators. We qualitatively replicate and extend ConSim's ranking of explanation methods and identify two limitations: simulators can bypass explanations by solving tasks directly when class names are meaningful, while class anonymization can reward explanations that reveal the hidden label mapping. A new classes-as-concepts baseline exposes this second shortcut. In the tested settings, simulator predictions rely mainly on task priors, with explanations making small changes. We offer recommendations for more robust automated simulatability evaluations.
+illustration: "/assets/img/2026_blackbox_limitations.jpg"
+
+links:
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2609.08585"
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Cite"
+    href: "https://arxiv.org/bibtex/2609.08585"
+    icon: "/assets/icons/scholar.png"
+    new_tab: true
