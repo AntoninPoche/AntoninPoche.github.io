@@ -1,0 +1,10 @@
+<div class="event-feed">
+  <ul class="event-list" id="{{ include.id }}">
+    {% for item in include.items %}
+    {% include event.html item=item index=forloop.index %}
+    {% endfor %}
+  </ul>
+  {% if include.items.size > 8 %}
+  <button class="event-toggle" type="button" aria-controls="{{ include.id }}" aria-expanded="false">More</button>
+  {% endif %}
+</div>

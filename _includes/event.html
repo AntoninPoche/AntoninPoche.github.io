@@ -1,0 +1,16 @@
+<li class="event-item{% if include.index and include.index > 8 %} event-item-hidden{% endif %}">
+  <span class="event-date">{{ include.item.date }}</span>
+  {% assign place = include.item.place | default: include.item.venue %}
+  <strong class="event-place">{{ place }}</strong>
+  <span class="event-title">{{ include.item.title }}{% if include.item.type %} <span class="event-type">{{ include.item.type }}</span>{% endif %}</span>
+  {% if include.item.links or include.item.href %}
+  <span class="event-links">
+    {% for link in include.item.links %}
+    <a class="event-link" href="{{ link.href }}" target="_blank" rel="noopener">🔗 {{ link.label }}</a>
+    {% endfor %}
+    {% if include.item.href %}
+    <a class="event-link" href="{{ include.item.href }}" target="_blank" rel="noopener">🔗 {{ include.item.link_label | default: 'Link' }}</a>
+    {% endif %}
+  </span>
+  {% endif %}
+</li>
