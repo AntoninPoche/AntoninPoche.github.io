@@ -62,10 +62,6 @@
   title: "🔊 Talk on Explainability for energy applications at ESIA seasonal school 2025 (Strasbourg, France)"
   href: "#"
 
-- date: "2024 July"
-  title: "👨‍🏫 Give tutorial on Explainability at PFIA La Rochelle 2024 (France)"
-  href: "https://docs.google.com/presentation/d/1jQt8tGHEdjBdyoUbQPATh4GdSIDJebxo/"
-
 - date: "2024 October"
   title: "🚀 Started PhD"
   href: "#"
@@ -73,6 +69,10 @@
 - date: "2024 September"
   title: "🔊 Talk on Explainability at IA Pau (France)"
   href: "https://github.com/deel-ai/xplique"
+
+- date: "2024 July"
+  title: "👨‍🏫 Give tutorial on Explainability at PFIA La Rochelle 2024 (France)"
+  href: "https://docs.google.com/presentation/d/1jQt8tGHEdjBdyoUbQPATh4GdSIDJebxo/"
 
 - date: "2024 January"
   title: "🔊 Present Xplique at Explain'AI workshop at EGC Dijon 2024 (France)"

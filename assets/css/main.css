@@ -505,15 +505,16 @@ a {
   color: var(--link-hover);
 }
 
-.news-item-hidden {
+.news.is-collapsible .news-item-hidden {
   display: none;
 }
 
-.news.is-expanded .news-item-hidden {
+.news.is-collapsible.is-expanded .news-item-hidden {
   display: grid;
 }
 
 .news-toggle {
+  display: none;
   margin-top: 2px;
   padding: 8px 12px;
   border: 1px solid var(--border);
@@ -523,6 +524,10 @@ a {
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.news.is-collapsible .news-toggle {
+  display: block;
 }
 
 .news-toggle:hover {

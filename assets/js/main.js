@@ -150,6 +150,8 @@
     const button = news.querySelector(".news-toggle");
     if (!button) return;
 
+    news.classList.add("is-collapsible");
+
     button.addEventListener("click", () => {
       const expanded = news.classList.toggle("is-expanded");
       button.setAttribute("aria-expanded", expanded ? "true" : "false");
@@ -162,6 +164,9 @@
     if (!box) {
       box = document.createElement("div");
       box.className = "lightbox";
+      box.setAttribute("role", "dialog");
+      box.setAttribute("aria-modal", "true");
+      box.setAttribute("aria-label", "Expanded illustration");
       box.innerHTML = `
         <div class="lightbox-inner">
           <button class="lightbox-close" type="button" aria-label="Close">Close</button>
@@ -173,17 +178,28 @@
 
     const image = box.querySelector(".lightbox-img");
     const closeButton = box.querySelector(".lightbox-close");
+    const layout = document.querySelector(".layout");
+    let opener = null;
+    let previousOverflow = "";
 
-    function open(src) {
+    function open(src, button) {
+      opener = button;
+      previousOverflow = document.body.style.overflow;
       image.src = src;
+      image.alt = button.querySelector("img")?.alt || "Expanded illustration";
       box.classList.add("is-open");
+      if (layout) layout.inert = true;
       document.body.style.overflow = "hidden";
+      closeButton.focus();
     }
 
     function close() {
       box.classList.remove("is-open");
       image.removeAttribute("src");
-      document.body.style.overflow = "";
+      if (layout) layout.inert = false;
+      document.body.style.overflow = previousOverflow;
+      if (opener) opener.focus();
+      opener = null;
     }
 
     document
@@ -191,7 +207,7 @@
       .forEach((button) => {
         button.addEventListener("click", () => {
           const src = button.dataset.full;
-          if (src) open(src);
+          if (src) open(src, button);
         });
       });
 
@@ -200,7 +216,15 @@
       if (event.target === box) close();
     });
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && box.classList.contains("is-open")) close();
+      if (!box.classList.contains("is-open")) return;
+      if (event.key === "Escape") {
+        event.preventDefault();
+        close();
+      } else if (event.key === "Tab") {
+        // The close button is the only focusable element in the dialog.
+        event.preventDefault();
+        closeButton.focus();
+      }
     });
   }
 
