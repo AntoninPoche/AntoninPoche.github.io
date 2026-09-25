@@ -100,62 +100,38 @@
     requestActiveUpdate();
   }
 
-  function initContributionToggles() {
-    const blocks = Array.from(document.querySelectorAll(".contribution-description"));
+  function initAuthorLists() {
+    document.querySelectorAll(".contribution-authors").forEach((authors) => {
+      const short = authors.querySelector(".contribution-authors-short");
+      const expand = authors.querySelector(".contribution-authors-expand");
+      const full = authors.querySelector(".contribution-authors-full");
+      if (!short || !expand || !full) return;
 
-    function updateToggle(block) {
-      const text = block.querySelector(".contribution-description-text");
-      const button = block.querySelector(".contribution-toggle");
-      const card = block.closest(".contribution");
-      if (!text || !button || !card) return;
-
-      const wasExpanded = card.classList.contains("is-expanded");
-      if (wasExpanded) card.classList.remove("is-expanded");
-
-      const needsToggle = text.scrollHeight > text.clientHeight + 1;
-      button.style.display = needsToggle ? "inline" : "none";
-      button.textContent = "More";
-      button.setAttribute("aria-expanded", "false");
-
-      if (wasExpanded && needsToggle) {
-        card.classList.add("is-expanded");
-        button.textContent = "Less";
-        button.setAttribute("aria-expanded", "true");
-      }
-    }
-
-    blocks.forEach((block) => {
-      updateToggle(block);
-
-      const button = block.querySelector(".contribution-toggle");
-      const card = block.closest(".contribution");
-      if (!button || !card) return;
-
-      button.addEventListener("click", () => {
-        const expanded = card.classList.toggle("is-expanded");
-        button.setAttribute("aria-expanded", expanded ? "true" : "false");
-        button.textContent = expanded ? "Less" : "More";
+      full.hidden = true;
+      full.style.display = "none";
+      short.hidden = false;
+      short.style.display = "inline";
+      expand.addEventListener("click", () => {
+        short.hidden = true;
+        short.style.display = "none";
+        full.hidden = false;
+        full.style.display = "inline";
+        full.focus();
       });
-    });
-
-    window.addEventListener("resize", () => {
-      blocks.forEach((block) => updateToggle(block));
     });
   }
 
-  function initNewsToggle() {
-    const news = document.querySelector(".news");
-    if (!news) return;
+  function initEventFeeds() {
+    document.querySelectorAll(".event-feed").forEach((feed) => {
+      const button = feed.querySelector(".event-toggle");
+      if (!button) return;
 
-    const button = news.querySelector(".news-toggle");
-    if (!button) return;
-
-    news.classList.add("is-collapsible");
-
-    button.addEventListener("click", () => {
-      const expanded = news.classList.toggle("is-expanded");
-      button.setAttribute("aria-expanded", expanded ? "true" : "false");
-      button.textContent = expanded ? "Less" : "More";
+      button.addEventListener("click", () => {
+        const expanded = feed.classList.toggle("is-expanded");
+        button.setAttribute("aria-expanded", expanded ? "true" : "false");
+        button.textContent = expanded ? "Less" : "More";
+      });
+      feed.classList.add("is-collapsible");
     });
   }
 
@@ -230,8 +206,8 @@
 
   function initAll() {
     initTopNav();
-    initContributionToggles();
-    initNewsToggle();
+    initAuthorLists();
+    initEventFeeds();
     initIllustrationLightbox();
   }
 

@@ -31,24 +31,26 @@ That means the section order and labels are controlled in one place: [`_data/sec
 Most content is data-driven:
 
 - [`_data/sidebar.yml`](_data/sidebar.yml): profile, affiliations, contact links
-- [`_data/news/index.yml`](_data/news/index.yml): news feed
+- [`_data/news/index.yml`](_data/news/index.yml): personal milestones and announcements
+- [`_data/talks.yml`](_data/talks.yml): tutorials and talks in separate sections, with optional resource links
+- [`_data/teaching.yml`](_data/teaching.yml): courses and teaching contributions
 - [`_data/publications/index.yml`](_data/publications/index.yml): ordered list of publication ids
 - [`_data/publications/`](./_data/publications): publication entries
 - [`_data/softwares/index.yml`](_data/softwares/index.yml): ordered list of software ids
 - [`_data/softwares/`](./_data/softwares): software entries
 - [`_data/posters.yml`](_data/posters.yml): poster image list
 
-The narrative sections such as intro, research, teaching, and resume are written directly in the section partials under [`_includes/sections/`](./_includes/sections).
+The narrative sections such as intro, research, and resume are written directly in the section partials under [`_includes/sections/`](./_includes/sections).
 
 Reusable content cards for publications and software are rendered through [`_includes/contribution.html`](_includes/contribution.html).
+Cards keep the complete `authors` list in YAML and use `authors_short` for the compact display; both the full author list and the abstract can be expanded on the page.
 
 ## Frontend Behavior
 
 - [`assets/css/main.css`](assets/css/main.css) defines the full visual system and responsive layout.
 - [`assets/js/main.js`](assets/js/main.js) adds:
   - sticky navigation active-state tracking
-  - expandable descriptions for long contribution cards
-  - expandable news history
+  - expandable history for talks, tutorials, and teaching when there are more than eight entries
   - a lightbox for publication illustrations and posters
 
 ## Local Development
@@ -86,6 +88,8 @@ make build
   3. Add any illustration under [`assets/img/`](./assets/img).
 - To add a software project, follow the same pattern in [`_data/softwares/`](./_data/softwares).
 - To add a news item, prepend it to [`_data/news/index.yml`](_data/news/index.yml).
+- To add a presentation, prepend it to `tutorials` or `talks` in [`_data/talks.yml`](_data/talks.yml). Add a link labeled `Slides` when available; for talks, use `type: "Invited talk"` when applicable.
+- To add a teaching contribution, add an entry to [`_data/teaching.yml`](_data/teaching.yml).
 - To add a poster, append an entry to [`_data/posters.yml`](_data/posters.yml) and place the image in [`assets/posters/`](./assets/posters).
 
 ## Deployment
