@@ -1,0 +1,84 @@
+tutorials:
+  - date: "2026 Oct 8"
+    title: "Explainability of language models with Interpreto"
+    venue: "CIMI Workshop, Toulouse"
+
+  - date: "2026 June"
+    title: "Explainability for Fairness"
+    venue: "FAccT, Montreal"
+    links:
+      - label: "Materials"
+        href: "https://github.com/FOR-sight-ai/interpreto/blob/main/docs/notebooks/examples/fairness_applications.ipynb"
+
+  - date: "2025 June"
+    title: "Explainability for NLP"
+    venue: "PFIA, Dijon"
+    links:
+      - label: "Slides"
+        href: "https://docs.google.com/presentation/d/1d63bDsLGK8Zhc2HR1AR6G_iY1R1r_Xrx/"
+
+  - date: "2024 July"
+    title: "Explainability"
+    venue: "PFIA, La Rochelle"
+    links:
+      - label: "Slides"
+        href: "https://docs.google.com/presentation/d/1jQt8tGHEdjBdyoUbQPATh4GdSIDJebxo/"
+
+talks:
+  - date: "2026 October"
+    title: "Explainability of language models"
+    venue: "CIMI Workshop, Toulouse"
+    type: "Invited talk"
+
+  - date: "2026 September"
+    title: "🪄 Interpreto"
+    venue: "European Trustworthy Association · Digital Factory Day (online)"
+    type: "Invited talk"
+
+  - date: "2026 September"
+    title: "Concept-based explanations and Fairness"
+    venue: "Orange XAI GT (online)"
+    type: "Invited talk"
+
+  - date: "2026 September"
+    title: "🪄 Interpreto"
+    venue: "ANITI Tech session (online)"
+    type: "Invited talk"
+
+  - date: "2026 June"
+    title: "Concept-based Explanations"
+    venue: "ETS, Montreal"
+    type: "Invited talk"
+
+  - date: "2026 June"
+    title: "Concept-based Explanations"
+    venue: "Mila, Montreal"
+    type: "Invited talk"
+
+  - date: "2026 March"
+    title: "Concept-based Explanations"
+    venue: "DFKI, Berlin"
+    type: "Invited talk"
+
+  - date: "2026 February"
+    title: "Concept-based Explainability"
+    venue: "ANITI Days, Toulouse"
+
+  - date: "2025 October"
+    title: "🪄 Interpreto"
+    venue: "XAI4U workshop at IHM, Toulouse"
+
+  - date: "2024 September"
+    title: "Explainability"
+    venue: "IA Pau"
+    type: "Invited talk"
+    links:
+      - label: "Project"
+        href: "https://github.com/deel-ai/xplique"
+
+  - date: "2024 January"
+    title: "Xplique"
+    venue: "Explain'AI workshop at EGC, Dijon"
+    links:
+      - label: "Project"
+        href: "https://github.com/deel-ai/xplique"

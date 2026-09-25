@@ -1,103 +1,15 @@
-- date: "2026 July"
-  title: "📰 Interpreto got accepted in ACL 2026 Demos (San Diego, USA)"
-  href: "https://aclanthology.org/2026.acl-demo.1/"
-
-- date: "2026 June"
-  title: "👨‍🏫 Give tutorial on Explainability for Fairness FAccT (Montreal, Canada)"
-  href: "https://github.com/FOR-sight-ai/interpreto/blob/main/docs/notebooks/examples/fairness_applications.ipynb"
-
-- date: "2026 June"
-  title: "🔊 Talk on Concept-based Explanations at ETS (Montreal, Canada)"
-  href: "https://github.com/FOR-sight-ai/interpreto"
-
-- date: "2026 June"
-  title: "🔊 Talk on Concept-based Explanations at Mila (Montreal, Canada)"
-  href: "https://github.com/FOR-sight-ai/interpreto"
-
 - date: "2026 March"
-  title: "🌍 Research stay in the XplaiNLP team at TU Berlin (Germany)"
+  title: "🌍 Research stay with the XplaiNLP team"
+  place: "TU Berlin, Germany"
   href: "https://xplainlp.github.io/"
-
-- date: "2026 March"
-  title: "🔊 Talk on Concept-based Explanations at DFKI (Germany)"
-  href: "https://github.com/FOR-sight-ai/interpreto"
-
-- date: "2026 March"
-  title: "✔️ Interpreto accepted at TALI workshop from TAL GDR (Paris Sorbonne, France)"
-  href: "https://github.com/FOR-sight-ai/interpreto"
-
-- date: "2026 February"
-  title: "🔥 Release a demo website for Interpreto"
-  href: "https://for-sight-ai.github.io/interpreto-demo/"
-
-- date: "2026 February"
-  title: "🔊 Talk on Concept-based Explainability at ANITI Days (Toulouse, France)"
-  href: "https://github.com/FOR-sight-ai/interpreto"
-  
-- date: "2026 January"
-  title: "📰 NOTAMs application of Interpreto accepted at ERTS 2026"
-  href: "https://hal.science/hal-05513839"
-
-- date: "2026 January"
-  title: "✔️ Interpreto accepted at Explain'AI workshop at EGC Anglet 2026 (France)"
-  href: "https://github.com/FOR-sight-ai/interpreto"
+  link_label: "Lab"
 
 - date: "2025 November"
-  title: "🎖️ Audience Choice Award for Interpreto poster at Mobilit.AI 2025 (Toulouse, France)"
+  title: "🎖️ Audience Choice Award for the Interpreto poster"
+  place: "Mobilit.AI, Toulouse"
   href: "https://github.com/FOR-sight-ai/interpreto"
-
-- date: "2025 October"
-  title: "🔊 Present Interpreto at XAI4U workshop at IHM 2025 (Toulouse, France)"
-  href: "https://github.com/FOR-sight-ai/interpreto"
-
-- date: "2025 July"
-  title: "📰 ConSim got accepted at ACL 2025 (Vienna, Austria)"
-  href: "https://aclanthology.org/2025.acl-long.279/"
-
-- date: "2025 June"
-  title: "👨‍🏫 Give tutorial on Explainability for NLP at PFIA Dijon 2025 (France)"
-  href: "https://docs.google.com/presentation/d/1d63bDsLGK8Zhc2HR1AR6G_iY1R1r_Xrx/"
-
-- date: "2025 April"
-  title: "🔊 Talk on Explainability for energy applications at ESIA seasonal school 2025 (Strasbourg, France)"
-  href: "#"
+  link_label: "Project"
 
 - date: "2024 October"
-  title: "🚀 Started PhD"
-  href: "#"
-
-- date: "2024 September"
-  title: "🔊 Talk on Explainability at IA Pau (France)"
-  href: "https://github.com/deel-ai/xplique"
-
-- date: "2024 July"
-  title: "👨‍🏫 Give tutorial on Explainability at PFIA La Rochelle 2024 (France)"
-  href: "https://docs.google.com/presentation/d/1jQt8tGHEdjBdyoUbQPATh4GdSIDJebxo/"
-
-- date: "2024 January"
-  title: "🔊 Present Xplique at Explain'AI workshop at EGC Dijon 2024 (France)"
-  href: "https://github.com/deel-ai/xplique"
-
-- date: "2023 August"
-  title: "📰 Example-based survey accepted at xAI 2023 Lisbon (Portugal)"
-  href: "https://link.springer.com/chapter/10.1007/978-3-031-44067-0_2"
-
-- date: "2023"
-  title: "📰 Publish guidelines for explainable AI with the DEEL project"
-  href: "https://hal.science/hal-04391691/"
-
-- date: "2021 June"
-  title: "🚀 IRT Saint Exupéry - Start as Research Engineer in Explainable AI"
-  href: "#"
-
-- date: "2021"
-  title: "🔊 Defend Master's Thesis on Explainable Reinforcement Learning"
-  href: "#"
-
-- date: "2021"
-  title: "🎓 ENSIMAG Master's Degree in Applied Mathematics and Computer Science"
-  href: "#"
-
-- date: "2021"
-  title: "🎓 Politecnico di Torino Master's Degree in Computer Engineering and Data Science"
-  href: "#"
+  title: "🚀 Started my PhD"
+  place: "Toulouse, France"
