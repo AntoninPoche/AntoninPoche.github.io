@@ -2,15 +2,17 @@
   title: "Intro"
 - id: research
   title: "Research"
-- id: news
-  title: "News"
 - id: software
   title: "Software"
 - id: publications
   title: "Publications"
-- id: posters
-  title: "Posters"
+- id: tutorials
+  title: "Tutorials"
+- id: talks
+  title: "Talks"
 - id: teaching
   title: "Teaching"
+- id: posters
+  title: "Posters"
 - id: resume
   title: "Resume"
