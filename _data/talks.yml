@@ -68,9 +68,25 @@ talks:
     title: "🪄 Interpreto"
     venue: "XAI4U workshop at IHM, Toulouse"
 
+  - date: "2024 October"
+    title: "Xplique"
+    venue: "Toulouse Data Science Meetup"
+    type: "Invited talk"
+    links:
+      - label: "Project"
+        href: "https://github.com/deel-ai/xplique"
+
   - date: "2024 September"
     title: "Explainability"
     venue: "IA Pau"
+    type: "Invited talk"
+    links:
+      - label: "Project"
+        href: "https://github.com/deel-ai/xplique"
+
+  - date: "2024 April"
+    title: "Xplique"
+    venue: "ANITI Technical Focus (online)"
     type: "Invited talk"
     links:
       - label: "Project"
