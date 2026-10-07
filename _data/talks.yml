@@ -1,7 +1,13 @@
 tutorials:
   - date: "2026 Oct 8"
-    title: "Explainability of language models with Interpreto"
+    title: "Language Models Interpretability"
     venue: "CIMI Workshop, Toulouse"
+    type: "Invited talk"
+    links:
+      - label: "Slides"
+        href: "assets/slides/2026-cimi.pdf"
+      - label: "Notebooks"
+        href: "https://github.com/FOR-sight-ai/interpreto/tree/cimi-notebooks/docs/notebooks/teaching"
 
   - date: "2026 June"
     title: "Explainability for Fairness"
@@ -25,11 +31,6 @@ tutorials:
         href: "https://docs.google.com/presentation/d/1jQt8tGHEdjBdyoUbQPATh4GdSIDJebxo/"
 
 talks:
-  - date: "2026 October"
-    title: "Explainability of language models"
-    venue: "CIMI Workshop, Toulouse"
-    type: "Invited talk"
-
   - date: "2026 September"
     title: "🪄 Interpreto"
     venue: "European Trustworthy Association · Digital Factory Day (online)"
