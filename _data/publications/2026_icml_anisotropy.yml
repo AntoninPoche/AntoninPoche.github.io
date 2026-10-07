@@ -1,0 +1,18 @@
+title: "Revisiting Anisotropy in Language Transformers: The Geometry of Learning Dynamics"
+authors: "Raphael Bernas, Fanny Jourdan, <strong>Antonin Poché</strong>, Céline Hudelot"
+authors_short: "R. Bernas, F. Jourdan, <strong>A. Poché</strong>, C. Hudelot"
+date: "2026"
+venue: "ICML"
+description: |
+  Since their introduction, Transformer architectures have dominated Natural Language Processing (NLP). However, recent research has highlighted an inherent anisotropy phenomenon in these models, presenting a significant challenge to their geometric interpretation. Previous theoretical studies on this phenomenon are rarely grounded in the underlying representation geometry. In this paper, we extend them by deriving geometric arguments for how frequency-biased sampling attenuates curvature visibility and why training preferentially amplify tangent directions. Empirically, we then use concept-based mechanistic interpretability during training, rather than only post hoc, to fit activation-derived low-rank tangent proxies and test them against ordinary backpropagated true gradients. Across encoder-style and decoder-style language models, we find that these activation-derived directions capture both unusually large gradient energy and a substantially larger share of gradient anisotropy than matched-rank normal controls, providing strong empirical support for a tangent-aligned account of anisotropy.
+  
+illustration: ""
+
+links:
+  - label: "Paper"
+    href: "https://arxiv.org/abs/2604.08764"
+    icon: "/assets/icons/arxiv.png"
+    new_tab: true
+  - label: "Cite"
+    href: "https://scholar.googleusercontent.com/scholar.bib?q=info:YPgV3R0yHEwJ:scholar.google.com/&output=citation&scisdr=CiAFz8b0EPPLygCmgJ0:ACTRDVEAAAAAasagmJ1c4vfB0U4ALlTlz6vwsoo&scisig=ACTRDVEAAAAAasagmJKvDF5oeODhgijh-lV15_Y&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1"
+    icon: "/assets/icons/scholar.png"
